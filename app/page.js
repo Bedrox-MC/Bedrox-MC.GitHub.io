@@ -21,7 +21,7 @@ export default function HomePage() {
   }, [copied]);
 
   function copyCmd() {
-    navigator.clipboard.writeText('npm install -g devboost').then(() => setCopied(true));
+    navigator.clipboard.writeText('npm install -g devboost-mc').then(() => setCopied(true));
   }
 
   return (
@@ -35,7 +35,7 @@ export default function HomePage() {
             <a href="#pipeline">How it works</a>
             <a href="#install">Install</a>
           </div>
-          <a className="navcta" href="#install">$ npm i -g devboost</a>
+          <a className="navcta" href="#install">$ npm i -g devboost-mc</a>
         </div>
       </nav>
 
@@ -57,7 +57,7 @@ export default function HomePage() {
                 <span style={{ background: '#ff5f57' }} />
                 <span style={{ background: '#febc2e' }} />
                 <span style={{ background: '#28c840' }} />
-                <div className="term-title">~/project — devboost</div>
+                <div className="term-title">~/project — devboost-mc</div>
               </div>
               <div className="term-body">
                 {terminalLines.map((line, index) => (
@@ -129,7 +129,7 @@ export default function HomePage() {
             <p>DevBoost installs as a single global JavaScript package and drops into any Node project.</p>
           </div>
           <div className="install-box">
-            <div className="cmd">$ <span>npm</span> install -g devboost</div>
+            <div className="cmd">$ <span>npm</span> install -g devboost-mc</div>
             <button className="copy-btn" type="button" onClick={copyCmd}>{copied ? 'Copied ✓' : 'Copy'}</button>
           </div>
         </div>
@@ -145,7 +145,6 @@ export default function HomePage() {
               <a href="#install">Install</a>
             </div>
           </div>
-          <div className="foot-note">// written in JavaScript, for JavaScript projects</div>
         </div>
       </footer>
     </>
