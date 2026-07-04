@@ -1,0 +1,17 @@
+{
+  "name": "bedrox-mc-pages",
+  "author": "Niklavs Gerkens <niklavs.gerkens@inbox.lv>",
+  "license": "GPL-3.0-only",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
